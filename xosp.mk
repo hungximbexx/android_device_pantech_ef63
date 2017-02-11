@@ -19,12 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/pantech/ef63/ef63.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/xosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xosp/config/xosp.mk)
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/pantech/ef63/ef63-vendor.mk)
 
-PRODUCT_NAME := lineage_ef63
+PRODUCT_NAME := xosp_ef63
 PRODUCT_DEVICE := ef63
 PRODUCT_MANUFACTURER := PANTECH
 PRODUCT_MODEL := IM-A910
